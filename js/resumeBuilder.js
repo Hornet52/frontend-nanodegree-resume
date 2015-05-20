@@ -65,8 +65,10 @@ var projects = {
 			"description": "blah blah blah",
 			"images": "http://placehold.it/400x200"
 		}
-	],
-	"display": function() {
+	]	
+}
+	
+projects.display = function() {
 		
 		//populate projects
 		for (project in projects.project) {
@@ -84,9 +86,6 @@ var projects = {
 		var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.project[project].images);
 		$(".project-entry:last").append(formattedProjectImage);
 		}
-	
-	}
-	
 }
 
 var bio = {
@@ -213,8 +212,9 @@ education.display = function() {
 		var formattedNameWithURL = formattedName.replace("%data%", education.schools[school].name);
 		$(".education-entry:last").append(formattedNameWithURL);
 		
-		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		$(".education-entry:last").append(formattedDegree);
+		//Have not earned any degrees, yet
+		//var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+		//$(".education-entry:last").append(formattedDegree);
 		
 		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
 		$(".education-entry:last").append(formattedDates);
