@@ -118,16 +118,16 @@ bio.display = function() {
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	$("#topContacts, #footerContacts").append(formattedMobile);
 
-	var formattedeEmail = HTMLemail.replace("%data%", bio.contacts.email);
+	var formattedeEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	$("#topContacts, #footerContacts").append(formattedeEmail);
 
-	var formattedeGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+	var formattedeGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
 	$("#topContacts, #footerContacts").append(formattedeGithub);
 
-	var formattedeTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+	var formattedeTwitter = HTMLtwitter.replace(/%data%/g, bio.contacts.twitter);
 	$("#topContacts, #footerContacts").append(formattedeTwitter);
 
-	var formattedeLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+	var formattedeLocation = HTMLlocation.replace(/%data%/g, bio.contacts.location);
 	$("#topContacts, #footerContacts").append(formattedeLocation);
 
 	var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
