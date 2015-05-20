@@ -242,8 +242,19 @@ education.display = function() {
 	}
 }
 
+function inName(name) {
+	var space = name.indexOf(" ");
+	var first = name.slice(0, 4);
+	var last = name.slice(space);
+	var lastUpper = last.toUpperCase();
+	return first + lastUpper;
+}
 
+//$("#main").append(internationalizeButton);
 bio.display();
 projects.display();
 work.display();
 education.display();
+
+
+
