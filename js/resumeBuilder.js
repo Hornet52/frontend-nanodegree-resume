@@ -5,21 +5,21 @@ var work = {
 			"title": "Account Associate",
 			"location": "Indianapolis, IN",
 			"dates": "1/2015 - present",
-			"description": "blah blah blah blah"
+			"description": "Managed print services for Eli Lilly and Anthem, Inc."
 		},
 		{
 			"employer": "JPMorgan Chase",
 			"title": "Document Review Specialist",
 			"location": "Indianapolis, IN",
 			"dates": "8/2011 - 8/2014",
-			"description": "blah blah blah blah"
+			"description": "Analyzed incoming subpoenas and provided responsive records"
 		},
 		{
 			"employer": "Xerox Corporation",
 			"title": "Account Associate",
 			"location": "Indianapolis, IN",
 			"dates": "9/2003 - 3/2009",
-			"description": "blah blah blah blah"
+			"description": "Managed print services for Eli Lilly"
 		}
 	]
 }
@@ -51,19 +51,19 @@ var projects = {
 			"title": "project 1",
 			"dates": "2015",
 			"description": "blah blah blah",
-			"images": "http://placehold.it/200x200"
+			"images": "http://placehold.it/400x200"
 		},
 		{
 			"title": "project 2",
 			"dates": "2015",
 			"description": "blah blah blah",
-			"images": "http://placehold.it/200x200"
+			"images": "http://placehold.it/400x200"
 		},
 		{
 			"title": "project 3",
 			"dates": "2015",
 			"description": "blah blah blah",
-			"images": "http://placehold.it/200x200"
+			"images": "http://placehold.it/400x200"
 		}
 	],
 	"display": function() {
@@ -147,12 +147,12 @@ bio.display = function() {
 var education = {
 	"schools": [
 		{
-			"name": "Noblesville High School",
-			"location": "Noblesville, IN",
-			"degree": "N/A",
-			"majors": ["N/A"],
-			"dates": "1995 - 1999",
-			"URL": "http://www.noblesvilleschools.org/Domain/8"
+			"name": "Ivy Tech Community College",
+			"location": "Indianapolis, IN",
+			"degree": "None",
+			"majors": ["Computer Information Technology"],
+			"dates" : "2009 - 2011",
+			"URL": "http://www.ivytech.edu"
 		},
 		{
 			"name": "Indiana State University",
@@ -163,12 +163,12 @@ var education = {
 			"URL": "http://www.ivytech.edu"
 		},
 		{
-			"name": "Ivy Tech Community College",
-			"location": "Indianapolis, IN",
-			"degree": "None",
-			"majors": ["Computer Information Technology"],
-			"dates" : "2009 - 2011",
-			"URL": "http://www.ivytech.edu"
+			"name": "Noblesville High School",
+			"location": "Noblesville, IN",
+			"degree": "N/A",
+			"majors": ["N/A"],
+			"dates": "1995 - 1999",
+			"URL": "http://www.noblesvilleschools.org/Domain/8"
 		}
 	],
 	"onlineCourses": [
