@@ -22,10 +22,10 @@ var work = {
 			"description": "Managed print services for Eli Lilly"
 		}
 	]
-}
+};
 
+//populate work experience
 work.display = function() {
-	//populate work experience
 	for (job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 	
@@ -43,7 +43,7 @@ work.display = function() {
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 		$(".work-entry:last").append(formattedDescription);
 	}
-}
+};
 
 var projects = {
 	"project": [
@@ -66,8 +66,9 @@ var projects = {
 			"images": "http://placehold.it/400x200"
 		}
 	]	
-}
-	
+};
+
+//populate projects
 projects.display = function() {
 		
 		//populate projects
@@ -86,7 +87,7 @@ projects.display = function() {
 		var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.project[project].images);
 		$(".project-entry:last").append(formattedProjectImage);
 		}
-}
+};
 
 var bio = {
 	"name": "Kyle Hurtley",
@@ -102,8 +103,9 @@ var bio = {
 			"twitter": "indyskeptic",
 			"location": "Fishers, IN"
 		}
-}
+};
 
+//populate biographical information
 bio.display = function() {
 	var formattedBioPic = HTMLbioPic.replace("%data%", bio.image);
 	$("#header").prepend(formattedBioPic);
@@ -141,7 +143,7 @@ bio.display = function() {
 			$("#skills").append(formattedSkill);
 		}	
 	}
-}
+};
 
 var education = {
 	"schools": [
@@ -202,8 +204,9 @@ var education = {
 				"URL": "https://www.udacity.com/course/ud804"
 			}
 	]
-}
+};
 
+//populate education details
 education.display = function() {
 	for(school in education.schools) {
 		$("#education").append(HTMLschoolStart);
@@ -224,7 +227,7 @@ education.display = function() {
 		
 		var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
 		$(".education-entry:last").append(formattedMajors);		
-	}
+	};
 	
 	$("#education").append(HTMLonlineClasses);
 	for(course in education.onlineCourses) {
@@ -239,16 +242,17 @@ education.display = function() {
 		
 		var formattedURL = HTMLonlineURL.replace(/%data%/g, education.onlineCourses[course].URL);
 		$(".education-entry:last").append(formattedURL);
-	}
-}
+	};
+};
 
+//internationalizatoin function
 function inName(name) {
 	var space = name.indexOf(" ");
 	var first = name.slice(0, 4);
 	var last = name.slice(space);
 	var lastUpper = last.toUpperCase();
 	return first + lastUpper;
-}
+};
 
 //$("#main").append(internationalizeButton);
 bio.display();
