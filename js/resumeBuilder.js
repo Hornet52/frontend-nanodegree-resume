@@ -5,7 +5,7 @@ var work = {
 			"title": "Account Associate",
 			"location": "Indianapolis, IN",
 			"dates": "1/2015 - present",
-			"description": "Managed print services for Eli Lilly and Anthem, Inc."
+			"description": "Povide managed print services for Eli Lilly and Anthem, Inc."
 		},
 		{
 			"employer": "JPMorgan Chase",
@@ -19,7 +19,7 @@ var work = {
 			"title": "Account Associate",
 			"location": "Indianapolis, IN",
 			"dates": "9/2003 - 3/2009",
-			"description": "Managed print services for Eli Lilly"
+			"description": "Provided managed print services for Eli Lilly"
 		}
 	]
 };
