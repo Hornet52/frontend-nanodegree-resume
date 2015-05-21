@@ -48,22 +48,11 @@ work.display = function() {
 var projects = {
 	"project": [
 		{
-			"title": "project 1",
+			"title": "Portfolio",
 			"dates": "2015",
-			"description": "blah blah blah",
-			"images": "http://placehold.it/400x200"
-		},
-		{
-			"title": "project 2",
-			"dates": "2015",
-			"description": "blah blah blah",
-			"images": "http://placehold.it/400x200"
-		},
-		{
-			"title": "project 3",
-			"dates": "2015",
-			"description": "blah blah blah",
-			"images": "http://placehold.it/400x200"
+			"description": "Portfolio project completed for Udacity coursework",
+			"images": "images/portfolio.png",
+			"URL": "portfolio/index.html"
 		}
 	]	
 };
@@ -75,7 +64,8 @@ projects.display = function() {
 		for (project in projects.project) {
 		$("#projects").append(HTMLprojectStart);
 	
-		var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.project[project].title);
+		var formattedProjectURL = HTMLprojectTitle.replace("#", projects.project[project].URL);
+		var formattedProjectTitle = formattedProjectURL.replace("%data%", projects.project[project].title);
 		$(".project-entry:last").append(formattedProjectTitle);
 	
 		var formattedProjectDate = HTMLprojectDates.replace("%data%", projects.project[project].dates);
