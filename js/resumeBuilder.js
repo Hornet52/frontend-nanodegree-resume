@@ -52,7 +52,7 @@ var projects = {
 			"dates": "2015",
 			"description": "Portfolio project completed for Udacity coursework",
 			"images": "images/portfolio.png",
-			"URL": "portfolio/index.html"
+			"URL": "http://www.github.com/hornet52/portfolio"
 		}
 	]	
 };
@@ -84,7 +84,7 @@ var bio = {
 	"role": "Web Developer",
 	"welcomeMessage": "Freelance for hire",
 	"skills": ["Windows", "Macintosh", "HTML", "JavaScript", "Ruby"],
-	"image": "images/fry.jpg",
+	"image": "images/profile.jpg",
 	"contacts": 
 		{
 			"mobile": "317-340-1076",
